@@ -1,0 +1,29 @@
+.playercard {
+    background: url("../data/img/Fußballplatz.jpg");
+    background-size: 100vw 82vh;
+    background-position: center;
+    font-size: 22px;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 82vh;
+    padding: 20px;
+
+    &__picture {
+        height: 60%;
+    }
+
+    &__name {
+        background-color: #167000;
+    }
+
+    &__team {
+        background-color: #167000;
+    }
+
+    &__rating {
+        background-color: #167000;
+    }
+}

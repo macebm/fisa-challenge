@@ -8,7 +8,6 @@ import Moreno from "../data/img/Moreno.jpg"
 import Kimmich from "../data/img/Kimmich.jpg"
 import Delort from "../data/img/Delort.jpg"
 import DeBruyne from "../data/img/DeBruyne.jpg"
-import Yannis from "../data/img/Yannis.jpg"
 
 export const allPlayers = [
   {
@@ -80,12 +79,5 @@ export const allPlayers = [
     name: "Kevin De Bruyne",
     team: "Manchester City",
     rating: "7.62",
-  },
-  {
-    id: 11,
-    picture: Yannis,
-    name: "Yannis SalamiSpaßiSpasti",
-    team: "Reinhard OW Noob Camp",
-    rating: "10",
   }
 ];
