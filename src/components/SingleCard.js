@@ -1,10 +1,10 @@
 export default function SingleCard({picture, name, team, rating}) {
     return (
-        <div>
-            <h3>{name}</h3>
-            <img src={picture} alt={"Photo from " + name} />
-            <p>{team}</p>
-            <p>{rating}</p>
+        <div className="playercard fade">
+            <h3 className="playercard__name">{name}</h3>
+            <img className="playercard__picture" src={picture} alt={"Photo from " + name} />
+            <p className="playercard__team">{team}</p>
+            <p className="playercard__rating">Rating: {rating}</p>
         </div>
     )
 }

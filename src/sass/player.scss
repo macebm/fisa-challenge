@@ -1,0 +1,14 @@
+.playercard {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 82vh;
+    padding: 20px;
+
+    &__picture {
+        height: 450px;
+    }
+}

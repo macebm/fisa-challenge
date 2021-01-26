@@ -4,22 +4,49 @@ import Button from "./Button";
 import SingleCard from "./SingleCard";
 
 export default function Home() {
-  const [players, setPlayers] = useState([]);
+  // eslint-disable-next-line
+  const [players, setPlayers] = useState(getPlayers());
+  let [slideIndex, setSlideIndex] = useState([0]);
 
   useEffect(() => {
-    const data = getPlayers();
-    setPlayers(data);
+    setSlideIndex(0);
   }, []);
+
+  function addSlideNumber() {
+    let number = slideIndex;
+    if (number < players.length - 1) {
+      number += 1;
+      setSlideIndex(number);
+    } else if (number >= players.length - 1) {
+      number = 0;
+      setSlideIndex(number);
+    }
+  }
+
+  function subtractSlideNumber() {
+    let number = slideIndex;
+    if (number <= players.length - 1 && number > 0) {
+      number -= 1;
+      setSlideIndex(number);
+    } else if (number <= 0) {
+      number = players.length - 1;
+      setSlideIndex(number);
+    }
+  }
 
   return (
     <section className="container">
-      {players.map(({id, picture, name, team, rating}) => (
-                <SingleCard key={id} picture={picture} name={name} team={team} rating={rating} />
-            ))}
-      <Button name="next"/>
-      <Button name="next"/>
-      <Button name="next"/>
-      <Button name="next"/>
+        {
+          <SingleCard
+            key={players[slideIndex].id}
+            picture={players[slideIndex].picture}
+            name={players[slideIndex].name}
+            team={players[slideIndex].team}
+            rating={players[slideIndex].rating}
+          />
+        }
+        <Button className="btn btn__prev" onClick={subtractSlideNumber}>&#10094;</Button>
+        <Button className="btn btn__next" onClick={addSlideNumber}>&#10095;</Button>
     </section>
   );
 }

@@ -8,69 +8,70 @@ import Moreno from "../data/img/Moreno.jpg"
 import Kimmich from "../data/img/Kimmich.jpg"
 import Delort from "../data/img/Delort.jpg"
 import DeBruyne from "../data/img/DeBruyne.jpg"
+import Yannis from "../data/img/Yannis.jpg"
 
 export const allPlayers = [
   {
     id: 1,
     picture: Messi,
     name: "Lionel Messi",
-    team: "Barcelona",
+    team: "FC Barcelona",
     rating: "8.30",
   },
   {
     id: 2,
     picture: Lewandowski,
     name: "Robert Lewandowski",
-    team: "Bayern Munich",
+    team: "FC Bayern Munich",
     rating: "8.03",
   },
   {
     id: 3,
     picture: Kane,
     name: "Harry Kane",
-    team: "Tottenham",
+    team: "Tottenham Hotspur",
     rating: "7.93",
   },
   {
     id: 4,
     picture: Grealish,
     name: "Jack Grealish",
-    team: "Aston Villa",
+    team: "FC Aston Villa",
     rating: "7.85",
   },
   {
     id: 5,
     picture: Ronaldo,
     name: "Cristiano Ronaldo",
-    team: "Juventus",
+    team: "Juventus FC",
     rating: "7.84",
   },
   {
     id: 6,
     picture: Mbappé,
     name: "Kylian Mbappé",
-    team: "Paris Saint-Germain",
+    team: "Paris Saint-Germain FC",
     rating: "7.78",
   },
   {
     id: 7,
     picture: Moreno,
     name: "Gerard Moreno",
-    team: "Villarreal",
+    team: "FC Villarreal",
     rating: "7.71",
   },
   {
     id: 8,
     picture: Kimmich,
     name: "Joshua Kimmich",
-    team: "Bayern Munich",
+    team: "FC Bayern Munich",
     rating: "7.66",
   },
   {
     id: 9,
     picture: Delort,
     name: "Andy Delort",
-    team: "Montpellier",
+    team: "HSC Montpellier",
     rating: "7.63",
   },
   {
@@ -80,4 +81,11 @@ export const allPlayers = [
     team: "Manchester City",
     rating: "7.62",
   },
+  {
+    id: 11,
+    picture: Yannis,
+    name: "Yannis SalamiSpaßiSpasti",
+    team: "Reinhard OW Noob Camp",
+    rating: "10",
+  }
 ];
