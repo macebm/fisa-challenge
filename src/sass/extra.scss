@@ -1,0 +1,23 @@
+.extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__quizcard {
+    margin: 10px 10px 40px;
+    padding: 20px;
+    box-shadow: 0px 10px 16px #0004;
+    text-align: center;
+  }
+
+  &__btn {
+      background-color: #710A1E;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 2px -2px #2b0e0e;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+  }
+}

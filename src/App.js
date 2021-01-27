@@ -1,8 +1,8 @@
 import { Route, Switch } from "react-router-dom";
-import "./App.scss";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Extra from "./components/Extra";
 
 function App() {
   return (
@@ -12,7 +12,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/"></Route>
+        <Route exact path="/extra">
+          <Extra />
+        </Route>
       </Switch>
       <Footer />
     </div>

@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import "./sass/styles.scss";
 import "./sass/home.scss";
 import "./sass/singleCard.scss";
+import "./sass/extra.scss"
 
 ReactDOM.render(
   <React.StrictMode>
